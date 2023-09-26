@@ -9,14 +9,16 @@ const About = () => {
           <p className='pt-20 text-4xl font-bold inline border-b-4 border-gray-600'> About </p>
         </div>
         <p className='text-xl mt-11'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias rerum nihil? Magnam veniam fugiat officiis, explicabo, saepe hic corporis, facere quo magni nemo voluptatum optio nisi accusamus ducimus ipsum.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, itaque quasi. Cum fugiat ducimus laborum eveniet id. Quod ad reprehenderit dolorem pariatur nisi eos aliquid, explicabo, sint hic nostrum doloremque?
-
+          I am a second-year college student studying computer science. I am passionate about programming and always looking for new challenges and opportunities to learn and grow.
+          In addition to my academic studies, I am involved in a number of extracurricular activities, including writing two articles for the CERN beam competition,
+          participating in the Nojavan Kharazmi competition, participating in the Javan Kharazmi competition in AI, where I earned two top rankings.
+          My experiences at CERN and in the Javan Kharazmi competition have given me the opportunity to work on challenging projects with talented people. I have learned a great deal from these experiences and looking forward for more.
         </p>
         <br />
         <p className='text-xl'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consequatur obcaecati doloremque odit voluptatem asperiores ullam! Sapiente soluta quis sed. Quaerat quis esse doloribus repellendus eaque impedit distinctio? Libero, assumenda?
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi inventore nulla laudantium alias tempora porro labore exercitationem, omnis voluptatem quibusdam pariatur voluptatibus est earum provident blanditiis ad natus culpa. Beatae?
+          I am currently learning web development. I am excited about the potential of web development to create new and innovative ways for people to interact with the world
+          around them. I am also interested in using web development to solve real-world problems. In the future, I hope to use my skills in web development to create a positive
+          impact on the world. I am also interested in pursuing a career in AI or Web Development. I am confident that my skills and experience will make me a valuable asset to any team.
         </p>
       </div>
     </div>
