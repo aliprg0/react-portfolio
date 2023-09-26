@@ -1,40 +1,48 @@
 import React from 'react'
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg'
-import installNode from '../assets/portfolio/installNode.jpg'
-import navbar from '../assets/portfolio/navbar.jpg'
-import reactParallax from '../assets/portfolio/reactParallax.jpg'
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
+import AIProjects from '../assets/portfolio/AIProjects.png'
+import BrainTumorDetection from '../assets/portfolio/BrainTumorDetection.png'
+import CandlePrediction from '../assets/portfolio/CandlePrediction.png'
+import RealStatePrediction from '../assets/portfolio/RealStatePrediction.png'
+import LandingPage from '../assets/portfolio/LandingPage.png'
 
 const Portfolio = () => {
     const portfolios = [
         {
             id:1,
-            src: arrayDestruct
+            src: LandingPage,
+            codesrc: "https://github.com/aliprg0/Rexa-Landing-Page",
+            live: true,
+            livesrc: 'aliprg0.github.io/Rexa-Landing-Page/',
         }, 
         {
             id:2,
-            src: installNode
+            src: BrainTumorDetection,
+            codesrc: "https://github.com/aliprg0/Brain-Tumor-Detection",
+            live: false,
+            livesrc: '',
         }, 
         {
             id:3,
-            src: navbar
+            src: RealStatePrediction,
+            codesrc: "https://github.com/aliprg0/Real-Estate-Price-Prediction-Site",
+            live: false,
+            livesrc: '',
         }, 
         {
             id:4,
-            src: reactParallax
+            src: CandlePrediction,
+            codesrc: "https://github.com/aliprg0/small_projects",
+            live: false,
+            livesrc: '',
         }, 
         {
             id:5,
-            src: reactSmooth
+            src: AIProjects,
+            codesrc: "https://github.com/aliprg0/Rexa-Landing-Page",
+            live: false,
+            livesrc: '',
         }, 
-        {
-            id: 6,
-            src: reactSmooth
-        }, 
-        {
-            id: 7,
-            src: reactSmooth
-        }, 
+
     ];
 
     return (
@@ -47,12 +55,15 @@ const Portfolio = () => {
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
                 gap-8 px-12 sm:px-0'>
-                    {portfolios.map(({id,src}) => (
+                    {portfolios.map(({id,src,codesrc,live,livesrc}) => (
                         <div key={id} className='shadow-md shadow-gray-500 rounded-lg hover:shadow-lg duration-200 hover:shadow-gray-400'>
-                            <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
+                            <img src={src} alt="" className='rounded-md duration-200 hover:scale-105 w-full' />
                             <div className='flex items-center justify-center'>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-lg'>Demo</button>
-                                <button className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg'>Code</button>
+                                {live ? 
+                                <a href={livesrc} className='hover:cursor-pointer w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Demo</a> :
+                                    <a className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Demo</a>
+                            }
+                                <a href={codesrc} className='hover:cursor-pointer w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Code</a>
                             </div>
                         </div>
                     ))}

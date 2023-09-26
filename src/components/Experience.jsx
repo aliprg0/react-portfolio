@@ -3,6 +3,9 @@ import React from 'react'
 import html from "../assets/html.png"
 import css from "../assets/css.png"
 import javascript from "../assets/javascript.png"
+import react from '../assets/react.png'
+import tailwind from '../assets/tailwind.png'
+import python from '../assets/python.png'
 
 const Experience = () => {
     const techs = [
@@ -24,6 +27,25 @@ const Experience = () => {
         title: "Javascript",
         style: "shadow-yellow-500",
         },
+        {
+            id: 4,
+            src: react ,
+            title: "React",
+            style: "shadow-cyan-200",
+        },
+        {
+            id: 5,
+            src: tailwind,
+            title: "Tailwind",
+            style: "shadow-cyan-700",
+        },  
+        {
+            id: 6,
+            src: python,
+            title: "Python",
+            style: "shadow-yellow-200",
+        },  
+        
     ]
     return (
         <div name="experience" className='bg-gradient-to-b from-gray-800 to-black w-full h-screen' >
