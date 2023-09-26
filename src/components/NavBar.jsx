@@ -28,11 +28,11 @@ const NavBar = () => {
     ];
 
     return (
-        <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black p-4">
-            <div>
-                <h1 className="text-5xl font-mono lg:pl-20 font-tt">Ali Kiani</h1>
+        <div className="z-10 flex justify-between items-center w-full h-20 text-white fixed bg-black p-4">
+            <div className="min-w-[10rem]"> 
+                <h1 className="text-5xl font-mono lg:pl-0 ">Ali Kiani</h1>
             </div>
-            <ul className="hidden md:flex  lg:pr-80">
+            <ul className="hidden md:flex  lg:pr-60">
                 {links.map(({ id, link }) => (
                     <li
                         key={id}
