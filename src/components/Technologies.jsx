@@ -7,7 +7,7 @@ import react from '../assets/react.png'
 import tailwind from '../assets/tailwind.png'
 import python from '../assets/python.png'
 
-const Experience = () => {
+const Technologies = () => {
     const techs = [
         {
             id:1,
@@ -48,7 +48,7 @@ const Experience = () => {
         
     ]
     return (
-        <div name="experience" className='pt-[5rem] lg:pt-20 bg-gradient-to-b from-gray-800 to-black w-full h-screen' >
+        <div name="technologies" className='pt-[5rem] lg:pt-20 bg-gradient-to-b from-gray-800 to-black w-full h-screen' >
 
             <div name="" className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
                 <div>
@@ -73,4 +73,4 @@ const Experience = () => {
     )
 }
 
-export default Experience
+export default Technologies
