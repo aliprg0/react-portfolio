@@ -9,6 +9,7 @@ const Portfolio = () => {
     const portfolios = [
         {
             id:1,
+            name: "Simple Landing Page",
             src: LandingPage,
             codesrc: "https://github.com/aliprg0/Rexa-Landing-Page",
             live: true,
@@ -16,6 +17,7 @@ const Portfolio = () => {
         }, 
         {
             id:2,
+            name: "Brain Tumor Detection",
             src: BrainTumorDetection,
             codesrc: "https://github.com/aliprg0/Brain-Tumor-Detection",
             live: false,
@@ -23,6 +25,7 @@ const Portfolio = () => {
         }, 
         {
             id:3,
+            name: "Real State Prediction",
             src: RealStatePrediction,
             codesrc: "https://github.com/aliprg0/Real-Estate-Price-Prediction-Site",
             live: false,
@@ -30,6 +33,7 @@ const Portfolio = () => {
         }, 
         {
             id:4,
+            name: "Candle Prediction",
             src: CandlePrediction,
             codesrc: "https://github.com/aliprg0/small_projects",
             live: false,
@@ -37,6 +41,7 @@ const Portfolio = () => {
         }, 
         {
             id:5,
+            name: "AI Models",
             src: AIProjects,
             codesrc: "https://github.com/aliprg0/Rexa-Landing-Page",
             live: false,
@@ -55,15 +60,16 @@ const Portfolio = () => {
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
                 gap-8 px-12 sm:px-0'>
-                    {portfolios.map(({id,src,codesrc,live,livesrc}) => (
+                    {portfolios.map(({id,src,codesrc,live,livesrc, name}) => (
                         <div key={id} className='shadow-md shadow-gray-500 rounded-lg hover:shadow-lg duration-200 hover:shadow-gray-400'>
                             <img src={src} alt="" className='rounded-md duration-200 hover:scale-105 w-full' />
+                            <p className='w-full text-center pt-3 text-2xl'>{name}</p>
                             <div className='flex items-center justify-center'>
                                 {live ? 
-                                <a href={livesrc} className='hover:cursor-pointer w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Demo</a> :
-                                    <a className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Demo</a>
+                                <a href={livesrc} className='hover:cursor-pointer border-gray-800 shadow-lg border-4 w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Demo</a> :
+                                    <a className='w-1/2 px-6 py-2 m-4 border-gray-800 shadow-lg border-4 duration-200 hover:scale-105 text-lg text-center'>Demo</a>
                             }
-                                <a href={codesrc} className='hover:cursor-pointer w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Code</a>
+                                <a href={codesrc} className='hover:cursor-pointer border-gray-800 shadow-lg border-4 w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-lg text-center'>Code</a>
                             </div>
                         </div>
                     ))}
